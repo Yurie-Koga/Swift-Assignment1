@@ -156,13 +156,20 @@ class ViewController: UIViewController {
         boxStackView.topAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
         boxStackView.trailingAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.trailingAnchor, constant: -25).isActive = true
         boxStackView.widthAnchor.constraint(equalTo: mainView.widthAnchor, multiplier: 0.3, constant: 0).isActive = true
-        boxStackView.heightAnchor.constraint(equalTo: mainView.heightAnchor, multiplier: 0.1, constant: 0).isActive = true
-
+//        boxStackView.heightAnchor.constraint(equalTo: mainView.heightAnchor, multiplier: 0.1, constant: 0).isActive = true
+        // fix height
+        boxStackView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
         botton1.widthAnchor.constraint(equalTo: boxStackView.widthAnchor, multiplier: 0.6).isActive = true
-        botton1.heightAnchor.constraint(equalTo: boxStackView.heightAnchor, multiplier: 0.7).isActive = true
+//        botton1.heightAnchor.constraint(equalTo: boxStackView.heightAnchor, multiplier: 0.7).isActive = true
+        // fix height
+        botton1.heightAnchor.constraint(equalToConstant: 50).isActive = true
         // no need to set width to use the rest of space
 //        botton2.widthAnchor.constraint(equalTo: boxStackView.widthAnchor, multiplier: 0.6).isActive = true
-        botton2.heightAnchor.constraint(equalTo: boxStackView.heightAnchor, multiplier: 0.7).isActive = true
+        
+//        botton2.heightAnchor.constraint(equalTo: boxStackView.heightAnchor, multiplier: 0.7).isActive = true
+        // fix height
+        botton2.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
 
   @objc private func squareTapped() {
